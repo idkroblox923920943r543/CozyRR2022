@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyRR 2022 Server Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .btn {
+            background-color: #ff4b4b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #ff2b2b;
+        }
+        .status {
+            color: #4caf50;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This page was built using GitHub Pages.</p>
+
+    <div class="card">
+        <h1>CozyRR 2022 Private Server</h1>
+        <p>Target API Environment: <span class="status">Online</span></p>
+        
+        <p>Server Link: <code>http://localhost:5000</code></p>
+        
+        <a href="http://localhost:5000/api/version" class="btn" target="_blank">Test API Connection</a>
+    </div>
+
 </body>
 </html>
